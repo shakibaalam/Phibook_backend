@@ -85,10 +85,15 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://phibook-backend.onrender.com','https://*.127.0.0.1','https://phibook-80995.web.app']
+
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:8000",
+    "https://phibook-backend.onrender.com",
+    "https://phibook-80995.web.app/"
 ]
 
 ROOT_URLCONF = 'final_xm_phibook.urls'
